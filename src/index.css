@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --color-sea: #0088A3;
+  --color-cyan: #00F4FF;
+  --color-deep: #050A15;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #050A15;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 244, 255, 0.1);
+}
+
+.glass-box {
+  background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(0,244,255,0.05) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 244, 255, 0.2);
+  border-radius: 16px;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(0, 244, 255, 0.5);
+}
+
+.box-glow {
+  box-shadow: 0 0 30px rgba(0, 244, 255, 0.15);
+}
+
+.box-glow-strong {
+  box-shadow: 0 0 40px rgba(0, 244, 255, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050A15;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 244, 255, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 244, 255, 0.8);
+}
+
+/* Hide scrollbar completely during loading screen */
+body.loading {
+  overflow: hidden;
+}
